@@ -1,8 +1,8 @@
 " =============================================================================
-" Filename: autoload/lightline/colorscheme/16color.vim
-" Author: itchyny
+" Filename: autoload/lightline/colorscheme/icy.vim
+" Author: xaltsc
 " License: MIT License
-" Last Change: 2017/11/25 11:14:04.
+" Last Change: Fri 15 Feb 2019 10:58:42 PM CET
 " =============================================================================
 
 let s:00 = [ '#021012', 0 ]
