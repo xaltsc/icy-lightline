@@ -46,4 +46,4 @@ let s:p.tabline.right = copy(s:p.normal.right)
 let s:p.normal.error = [ [ s:07, s:01 ] ]
 let s:p.normal.warning = [ [ s:00, s:03 ] ]
 
-let g:lightline#colorscheme#16color#palette = lightline#colorscheme#flatten(s:p)
+let g:lightline#colorscheme#icy#palette = lightline#colorscheme#flatten(s:p)
