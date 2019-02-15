@@ -15,12 +15,12 @@ let s:c06 = [ '#26c6da', 6 ]
 let s:c07 = [ '#095b67', 7 ]
 let s:c08 = [ '#052e34', 8 ]
 let s:c09 = [ '#16c1d9', 9 ]
-let s:c10 = [ '#4dd0e1', 10 ]
-let s:c11 = [ '#80deea', 11  ]
-let s:c12 = [ '#00bcd4', 12 ]
-let s:c13 = [ '#08acc1', 13 ]
-let s:c14 = [ '#26c6da', 14 ]
-let s:c15 = [ '#109cb0', 15 ]
+let s:c10 = [ '#4dd0e1', 10]
+let s:c11 = [ '#80deea', 11]
+let s:c12 = [ '#00bcd4', 12]
+let s:c13 = [ '#08acc1', 13]
+let s:c14 = [ '#26c6da', 14]
+let s:c15 = [ '#109cb0', 15]
 
 if lightline#colorscheme#background() ==# 'light'
   let [s:c08, s:c15] = [s:c15, s:c08]
@@ -30,20 +30,20 @@ if lightline#colorscheme#background() ==# 'light'
 endif
 
 let s:p = {'normal': {}, 'inactive': {}, 'insert': {}, 'replace': {}, 'visual': {}, 'tabline': {}}
-let s:p.normal.left = [ [ s:c15, s:c04 ], [ s:c15, s:c10 ] ]
-let s:p.normal.right = [ [ s:c00, s:c12 ], [ s:c14, s:c10 ] ]
-let s:p.inactive.right = [ [ s:c00, s:c10 ], [ s:c11, s:c00 ] ]
-let s:p.inactive.left =  [ [ s:c12, s:c00 ], [ s:c11, s:c00 ] ]
-let s:p.insert.left = [ [ s:c15, s:c02 ], [ s:c15, s:c10 ] ]
-let s:p.replace.left = [ [ s:c15, s:c01 ], [ s:c15, s:c10 ] ]
-let s:p.visual.left = [ [ s:c15, s:c05 ], [ s:c15, s:c10 ] ]
-let s:p.normal.middle = [ [ s:c14, s:c00 ] ]
+let s:p.normal.left     = [ [ s:c03, s:c08 ], [ s:c07, s:c05 ] ]
+let s:p.normal.right    = [ [ s:c08, s:c12 ], [ s:c08, s:c03 ] ]
+let s:p.inactive.right  = [ [ s:c00, s:c08 ], [ s:c00, s:c08 ] ]
+let s:p.inactive.left   = [ [ s:c07, s:c08 ], [ s:c07, s:c08 ] ]
+let s:p.insert.left     = [ [ s:c07, s:c02 ], [ s:c07, s:c05 ] ]
+let s:p.replace.left    = [ [ s:c03, s:c07 ], [ s:c07, s:c05 ] ]
+let s:p.visual.left     = [ [ s:c07, s:c03 ], [ s:c07, s:c05 ] ]
+let s:p.normal.middle   = [ [ s:c07, s:c08 ] ]
 let s:p.inactive.middle = [ [ s:c12, s:c00 ] ]
-let s:p.tabline.left = [ [ s:c07, s:c10 ] ]
-let s:p.tabline.tabsel = [ [ s:c07, s:c00 ] ]
-let s:p.tabline.middle = [ [ s:c10, s:c07 ] ]
-let s:p.tabline.right = copy(s:p.normal.right)
-let s:p.normal.error = [ [ s:c07, s:c01 ] ]
-let s:p.normal.warning = [ [ s:c00, s:c03 ] ]
+let s:p.tabline.left    = [ [ s:c07, s:c00 ] ]
+let s:p.tabline.tabsel  = [ [ s:c07, s:c00 ] ]
+let s:p.tabline.middle  = [ [ s:c10, s:c07 ] ]
+let s:p.tabline.right   = copy(s:p.normal.right)
+let s:p.normal.error    = [ [ s:c07, s:c01 ] ]
+let s:p.normal.warning  = [ [ s:c00, s:c03 ] ]
 
 let g:lightline#colorscheme#icy#palette = lightline#colorscheme#flatten(s:p)
