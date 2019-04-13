@@ -30,17 +30,17 @@ if lightline#colorscheme#background() ==# 'light'
 endif
 
 let s:p = {'normal': {}, 'inactive': {}, 'insert': {}, 'replace': {}, 'visual': {}, 'tabline': {}}
-let s:p.normal.left     = [ [ s:c03, s:c08 ], [ s:c07, s:c05 ] ]
+let s:p.normal.left     = [ [ s:c03, s:c08 ], [ s:c08, s:c05 ] ]
 let s:p.normal.right    = [ [ s:c08, s:c12 ], [ s:c08, s:c03 ] ]
 let s:p.inactive.right  = [ [ s:c00, s:c08 ], [ s:c00, s:c08 ] ]
 let s:p.inactive.left   = [ [ s:c07, s:c08 ], [ s:c07, s:c08 ] ]
-let s:p.insert.left     = [ [ s:c07, s:c02 ], [ s:c07, s:c05 ] ]
-let s:p.replace.left    = [ [ s:c03, s:c07 ], [ s:c07, s:c05 ] ]
-let s:p.visual.left     = [ [ s:c07, s:c03 ], [ s:c07, s:c05 ] ]
+let s:p.insert.left     = [ [ s:c07, s:c02 ], [ s:c08, s:c05 ] ]
+let s:p.replace.left    = [ [ s:c03, s:c07 ], [ s:c08, s:c05 ] ]
+let s:p.visual.left     = [ [ s:c07, s:c03 ], [ s:c08, s:c05 ] ]
 let s:p.normal.middle   = [ [ s:c07, s:c08 ] ]
 let s:p.inactive.middle = [ [ s:c12, s:c00 ] ]
 let s:p.tabline.left    = copy(s:p.normal.left)
-let s:p.tabline.tabsel  = [ [ s:c07, s:c05 ] ]
+let s:p.tabline.tabsel  = [ [ s:c08, s:c05 ] ]
 let s:p.tabline.middle  = copy(s:p.normal.middle)
 let s:p.tabline.right   = copy(s:p.normal.right)
 let s:p.normal.error    = [ [ s:c07, s:c01 ] ]
